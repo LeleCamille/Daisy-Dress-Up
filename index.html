@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="backgroundMusic" loop>
+        <source src="DaisySong.wav" type="audio/mpeg">
+    </audio>
+
+    <button onclick="playMusic()">Play Song</button>
+    <button onclick="pauseMusic()">Mute Song</button>
+
+    <div class="container">
+        <!-- Imagem base -->
+        <img id="Base" src="Base.png" alt="Base">
+
+        <!-- Imagens sobrepostas -->
+        <img id="HairBunImage" class="overlay-image" src="HairBun.png" alt="Hair Bun">
+        <img id="HairPonytailImage" class="overlay-image" src="HairPonytail.png" alt="Hair Ponytail">
+        <img id="HairDownImage" class="overlay-image" src="HairDown.png" alt="Hair Down">
+
+        <img id="BlueSneakerImage" class="overlay-image" src="BlueSneaker.png" alt="Blue Sneaker">
+        <img id="WhiteHeelsImage" class="overlay-image" src="Heels-White.png" alt="White Heels">
+        <img id="BlackHeelsImage" class="overlay-image" src="Heels-Black.png" alt="Black Heels">
+
+        <img id="ShortJeansImage" class="overlay-image" src="ShortJeans.png" alt="Short Jeans">
+        <img id="DarkJeansImage" class="overlay-image" src="Jeans-dark.png" alt="Dark Jeans">
+        <img id="LightJeansImage" class="overlay-image" src="Jeans-light.png" alt="Light Jeans">
+        <img id="BlackSkirtImage" class="overlay-image" src="Skirt-Black.png" alt="Skirt">
+        <img id="Skirt-Jeans" class="overlay-image" src="Skirt-Jeans.png" alt="Skirt Jeans">
+    </div>
+    <div id="wardrobe">
+    <nav class="Sections">
+
+        <button id="HairSection" class="HairSection" style="display: block;">Hair</button>
+        <div class="buttons-container">
+            <button id="HairBunButton" class="HairSection">Mostrar HairBun</button>
+            <button id="HairPonytailButton" class="HairSection">Mostrar HairPonytail</button>
+            <button id="HairDownButton" class="HairSection">Mostrar HairDown</button>
+        </div>
+
+        <button id="BottomSection"class="BottomSection" style="display: block;">Bottom</button>
+        <div class="buttons-container">
+            <button id="ShortJeansButton" class="BottomSection">Mostrar ShortJeans</button>
+            <button id="DarkJeansButton" class="BottomSection">Mostrar DarkJeans</button>
+            <button id="LightJeansButton" class="BottomSection">Mostrar LightJeans</button>
+            <button id="SkirtJeansButton" class="BottomSection">Mostrar SkirtJeans</button>
+            <button id="SkirtButton" class="BottomSection">Mostrar Skirt</button>
+        </div>
+
+        <button id="ShoesSection"class="ShoesSection">Shoes</button>
+        <div class="buttons-container">
+           <button id="BlueSneakerButton" class="ShoesSection">Mostrar BlueSneaker</button>
+           <button id="BlackHeelsButton" class="ShoesSection">Mostrar BlackHeels</button>
+           <button id="WhiteHeelsButton" class="ShoesSection">Mostrar WhiteHeels</button>
+        </div>
+    </nav>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="script1.js"></script>
+<script src="script2.js"></script>
+
+</html>

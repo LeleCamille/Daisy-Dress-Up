@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+:root{
+    --vermelho: #cd0105;
+    --hover: #b80000;
+    --rosa: #eb6464;
+    --bege: #efc2b3;
+    --vinho: #540102;
+}
+
+body{
+    background-color: var(--rosa);
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-family: "Pixelify Sans", sans-serif;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: var(--vinho);
+    background-color: var(--vermelho);
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 9px var(--vinho);
+    transition: .3s;
+}
+  
+button:hover {background-color: var(--hover)}
+  
+button:active {
+    background-color: var(hover);
+    box-shadow: 0 5px var(--vinho);
+    transform: translateY(4px);
+}
+
+.container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.buttons-container button {
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#Base {
+    width: 100%;
+    height: auto;
+    margin-left: 300px;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+
+.Sections{
+    display: flex;  
+    flex-direction: column;
+    position: absolute;
+    font-size: 50px;
+    top: 5%;
+    right: 10%;
+    background-color: #efc2b3;
+    margin-top: 20px;
+}
